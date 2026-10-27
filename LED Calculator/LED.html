@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LED live · calculator</title>
+<link rel ="stylesheet" href="LED.css">
+</head>
+<body>
+  <div class="led-calc">
+    <!-- display panel -->
+    <div class="screen">
+      <input type="text" id="result" readonly value="0" />
+      <!-- LED dots indicator (live colors) -->
+      <div class="led-strip" id="ledStrip">
+        <span class="led-dot" id="led1"></span>
+        <span class="led-dot" id="led2"></span>
+        <span class="led-dot" id="led3"></span>
+        <span class="led-dot" id="led4"></span>
+        <span class="led-dot" id="led5"></span>
+      </div>
+    </div>
+
+    <!-- button grid -->
+    <div class="buttons">
+      <button class="btn clear" id="clear">C</button>
+      <button class="btn operator" id="backspace">⌫</button>
+      <button class="btn operator" id="percent">%</button>
+      <button class="btn operator" id="divide">÷</button>
+
+      <button class="btn" id="7">7</button>
+      <button class="btn" id="8">8</button>
+      <button class="btn" id="9">9</button>
+      <button class="btn operator" id="multiply">×</button>
+
+      <button class="btn" id="4">4</button>
+      <button class="btn" id="5">5</button>
+      <button class="btn" id="6">6</button>
+      <button class="btn operator" id="subtract">−</button>
+
+      <button class="btn" id="1">1</button>
+      <button class="btn" id="2">2</button>
+      <button class="btn" id="3">3</button>
+      <button class="btn operator" id="add">+</button>
+
+      <button class="btn zero" id="0">0</button>
+      <button class="btn" id="dot">.</button>
+      <button class="btn equals" id="equals">=</button>
+    </div>
+
+    <!-- little led signature -->
+    <div class="signature">
+      <i></i> <span>LED · live colors</span> <i></i>
+    </div>
+  </div>
+
+  <script src="LED.js"></script>
+</body>
+</html>
